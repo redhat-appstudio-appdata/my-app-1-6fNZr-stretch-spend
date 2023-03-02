@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-uzhv
+  namespace: pshivpuj-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:3ce7834e7b85f95d53aecd4a792960a1d8758dd28a98ff9e73efe368d9ed0e27
+        name: my-python
+        resources: {}
+status: {}
